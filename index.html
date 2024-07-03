@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronômetro Pomodoro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cronômetro Pomodoro</h1>
+    <div class="config">
+      <label for="total-work-time">Tempo Total de Trabalho (min):</label>
+      <input type="number" id="total-work-time" value="120">
+      
+      <label for="work-interval-time">Tempo de Trabalho por Período (min):</label>
+      <input type="number" id="work-interval-time" value="25">
+      
+      <label for="break-time">Tempo de Intervalo (min):</label>
+      <input type="number" id="break-time" value="5">
+    </div>
+
+    <div class="button-container">
+      <button id="start-button">Iniciar</button>
+      <button id="reset-button">Redefinir</button>
+    </div>
+
+    <div class="timer">
+      <p id="total-timer-label">Tempo Total Restante</p>
+      <p id="total-time-display">120:00</p>
+      <p id="timer-label">Tempo de Trabalho</p>
+      <p id="time-display">25:00</p>
+    </div>
+    
+    <div class="rewards">
+      <h2>Recompensas</h2>
+      <p>Valor Ganho: R$<span id="earnings-display">0.00</span></p>
+    </div>
+    
+    <div class="audio-button-container">
+      <button id="stop-audio-button" style="display: none;">Parar Áudio</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
